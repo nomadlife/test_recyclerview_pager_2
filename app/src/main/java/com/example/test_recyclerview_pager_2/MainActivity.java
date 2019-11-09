@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         rv.setLayoutManager(mLayoutManager);
 
-        ProductCardAdapter mCardAdapter = new ProductCardAdapter(, allMovieList);
+        ProductCardAdapter mCardAdapter = new ProductCardAdapter(getSupportFragmentManager(), allMovieList);
         rv.setAdapter(mCardAdapter);
     }
 

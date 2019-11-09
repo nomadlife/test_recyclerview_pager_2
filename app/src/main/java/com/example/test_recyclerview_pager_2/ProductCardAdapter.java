@@ -17,13 +17,13 @@ import java.util.HashMap;
 
 public class ProductCardAdapter extends RecyclerView.Adapter<ProductCardAdapter.ViewHolder> {
 
-    private ArrayList<Product> items;
+    private ArrayList<ArrayList<Product>> allMovieList;
     private FragmentManager fragmentManager;
 
     HashMap<Integer, Integer> mViewPagerState = new HashMap<>();
 
-    public ProductCardAdapter(FragmentManager fragmentManager, ArrayList<Product> items) {
-        this.items = items;
+    public ProductCardAdapter(FragmentManager fragmentManager, ArrayList<ArrayList<Product>> data) {
+        this.allMovieList = data;
         this.fragmentManager = fragmentManager;
     }
 
