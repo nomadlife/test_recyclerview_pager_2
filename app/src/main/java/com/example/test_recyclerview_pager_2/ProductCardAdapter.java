@@ -48,7 +48,7 @@ public class ProductCardAdapter extends RecyclerView.Adapter<ProductCardAdapter.
 
     @Override
     public int getItemCount() {
-        return 10;
+        return allMovieList.size();
     }
 
     @Override
